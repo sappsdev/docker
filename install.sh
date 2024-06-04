@@ -1,12 +1,5 @@
 #!/bin/bash
 
-if [[ $(sudo -n true 2>/dev/null) ]]; then
-    echo "Sudo is not required. Executing the command without sudo."
-else
-    echo "Sudo is required. Executing sudo -i."
-    sudo -i
-fi
-
 apt update
 
 apt-get install -y ca-certificates curl
